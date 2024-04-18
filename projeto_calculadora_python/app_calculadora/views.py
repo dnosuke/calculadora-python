@@ -9,7 +9,7 @@ def calcular_soma(request):
         valor2 = int(request.POST.get('valor2'))
         operacao = request.POST.get('operacao')
 
-        resultado = 'resultado'
+        resultado = 'Hello World!'
         
         return render(request, 'calculadora/calculadora.html', {'valor1': valor1, 'valor2': valor2,'resultado': resultado})
     else:
